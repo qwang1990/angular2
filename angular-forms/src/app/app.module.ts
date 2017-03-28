@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { AppComponent }  from './app.component';
 import { HeroFormComponent } from './hero-form.component';
+import {SizerComponent} from './sizer.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -10,7 +11,8 @@ import { HeroFormComponent } from './hero-form.component';
   ],
   declarations: [
     AppComponent,
-    HeroFormComponent
+    HeroFormComponent,
+    SizerComponent
   ],
   bootstrap: [ AppComponent ]
 })
