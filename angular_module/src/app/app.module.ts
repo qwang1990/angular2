@@ -3,25 +3,22 @@ import { BrowserModule }  from '@angular/platform-browser';
 
 /* App Root */
 import { AppComponent }   from './app.component';
+import {MModule} from "./M/m.module";
+import {WModule} from "./W/w.module";
 
 /* Feature Modules */
-import { ContactModule }    from './contact/contact.module';
-import { CoreModule }       from './core/core.module';
 
 /* Routing Module */
-import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    ContactModule,
-/*
-    CoreModule,
-*/
-    CoreModule.forRoot({userName: 'Miss Marple'}),
-    AppRoutingModule
+    MModule,
+    WModule
   ],
-  declarations: [ AppComponent ],
+  declarations: [
+    AppComponent,
+  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
